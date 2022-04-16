@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    margin-top: 20px;
+    text-align: center;
+    background-color: blue;
+}
+
+.question {
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: red;
+    display: inline-block;
+    font-size: 25px;
+
+}
+
+.answer {
+    margin-top: 10px;
+    margin: 10px 20px 0px 200px;
+    background-color: darkgrey;
+    font-size: 20px;
+
+}
+
+/* use of Before After */
+
+
+h2 {
+
+    color: red;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2::before {
+    content: "Before";
+}
+
+h2::before {
+    content: "After";
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+}
+
+p::before {
+    content: '"';
+}
+
+p::after {
+    content: '"';
+}
+
+/* button Disign */
+.btn_div {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.click_class {
+    font-size: 50px;
+    text-decoration: none;
+    background-color: #3498db;
+    display: inline-block;
+    color: white;
+    padding: 16px 40px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+/* hover efect */
+.click_class::before {
+    content: "";
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    border-radius: 10px;
+    transition: .5s;
+    z-index: -1;
+}
+
+.click_class:hover::before {
+    width: 100%;
+}
+
+/* hover top to bottom */
+.hover_top-bottom {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.top_bottom {
+    font-size: 50px;
+    text-decoration: none;
+    background-color: #3498db;
+    display: inline-block;
+    color: white;
+    padding: 16px 40px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.top_bottom::before {
+    content: "";
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: green;
+    border-radius: 10px;
+    transition: .5s;
+    z-index: -1;
+
+}
+
+.top_bottom:hover::before {
+    height: 100%;
+}
+
+/* hover right to left */
+.hover_right-left {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.right_left {
+    font-size: 50px;
+    text-decoration: none;
+    background-color: #3498db;
+    display: inline-block;
+    color: white;
+    padding: 16px 40px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.right_left::before {
+    content: "";
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: orange;
+    border-radius: 10px;
+    transition: .5s;
+    z-index: -1;
+
+}
+
+.right_left:hover::before {
+    width: 100%;
+}
+
+/* hover bottom to top */
+.hover_bottom-top {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.bottom_top {
+    font-size: 50px;
+    text-decoration: none;
+    background-color: #3498db;
+    display: inline-block;
+    color: white;
+    padding: 16px 40px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.bottom_top::before {
+    content: "";
+    height: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    transition: .5s;
+    z-index: -1;
+
+}
+
+.bottom_top:hover::before {
+    height: 100%;
+}
+
+/* list style icon */
+ul {
+    margin-left: 50px;
+    list-style: none;
+}
+
+li {
+    font-size: 50px;
+}
+
+li::before {
+    content: "\f336";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    color: green;
+    font-size: 50px;
+    display: inline-block;
+    margin-right: 20px;
+
+}
